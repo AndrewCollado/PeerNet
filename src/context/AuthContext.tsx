@@ -67,7 +67,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   };
 
   useEffect(() => {
-    const cookieFallback = localStorage.getItem("cookieFallback");
+    const cookieFallback = sessionStorage.getItem("cookieFallback");
     if (
       cookieFallback === "[]" ||
       cookieFallback === null ||
